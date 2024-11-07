@@ -6,7 +6,6 @@
     background: linear-gradient(90deg,black,rgb(93, 93, 97));
     bottom: 0;
     transition: width 0.3s ease;
-    
 }
 
 .liNav:hover::after{
