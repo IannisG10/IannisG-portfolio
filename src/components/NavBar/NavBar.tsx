@@ -11,7 +11,7 @@ import Avatar from '../../assets/Avatar/Avatar_backGround.jpeg'
 const NavBar: React.FC = ()=> {
     return(
         <>
-            <div className="flex justify-between items-center flex-row  m-3">
+            <div className="flex justify-between items-center flex-row m-2">
                 
                 <div className="flex flex-row justify-center items-center gap-2">
                     <div className="bg-zinc-700 p-0.5 rounded-full w-20 h-22 hover:bg-gray-400 transition duration-200 ease-in-out">

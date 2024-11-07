@@ -1,0 +1,36 @@
+.headers{
+    height: 84vh;
+    position: relative;
+    background: rgb(50,49,49);
+    background: linear-gradient(243deg, rgba(50,49,49,1) 0%, rgba(142,140,140,1) 53%, rgba(205,199,199,1) 100%);
+}
+.typeText{
+    white-space: nowrap;
+    letter-spacing: .15em;
+    animation: 
+        typing 1s steps(2,end),
+        blink-caret 1s step-end infinite
+}
+.animeName{
+    animation: 
+        blink-caretName 2s step-end infinite,
+        typingName 1.5s steps(8,end)
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+@keyframes typingName {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+}
+
+@keyframes blink-caretName {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
