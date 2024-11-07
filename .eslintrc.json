@@ -1,0 +1,5 @@
+{
+    "root": true,
+    "extends": ["plugin:tailwindcss/recomended"],
+    "parser": "@typescript-eslint/parser"
+}
