@@ -3,6 +3,7 @@ import s from "./Header.module.css"
 import Avatar from '../../assets/Avatar/Avatar.png'
 import { motion } from "framer-motion";
 
+
 const MotionFade: React.FC = ()=>{
     const FADE_UP_ANIMATION_VARIANTS = {
         hidden: { opacity: 0, y: 10 },
@@ -17,16 +18,32 @@ const MotionFade: React.FC = ()=>{
             hidden: {},
             show: {
               transition: {
-                staggerChildren: 1,
+                staggerChildren: .9,
               },
             },
           }}
         >
           <motion.h1
-            className="text-center font-display text-4xl tracking-[-0.1em] text-white drop-shadow-sm md:text-lg md:leading-[5rem] absolute top-36 left-24"
+            className="text-center font-display text-4xl tracking-[-0.1em] text-gray-100 drop-shadow-sm md:text-base  md:leading-[5rem] m-1 absolute top-32 left-20 ml-3 w-fit"
             variants={FADE_UP_ANIMATION_VARIANTS}
           >
-            Fade Up
+            Passionate web developer and programmer,
+          
+          </motion.h1>
+          <motion.h1
+            className="text-center font-display text-4xl tracking-[-0.07em] text-zinc-700 drop-shadow-sm md:text-base  md:leading-[5rem] absolute top-36 m-2 left-24 w-fit"
+            variants={FADE_UP_ANIMATION_VARIANTS}
+          >
+             crafting efficient web applications ans website
+          
+          </motion.h1>
+         
+          <motion.h1
+            className="text-center font-display text-4xl tracking-[-0.07em] text-zinc-800 drop-shadow-sm md:text-base  md:leading-[5rem] absolute top-40 m-3 left-24 w-fit"
+            variants={FADE_UP_ANIMATION_VARIANTS}
+          >
+             and user-focused experiences with <span className="text-cyan-400">React</span>
+          
           </motion.h1>
         </motion.div>
       );
