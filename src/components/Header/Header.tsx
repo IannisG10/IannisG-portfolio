@@ -1,19 +1,24 @@
 import React from "react";
 import s from "./Header.module.css"
 import avatar from "../../assets/Avatar/Avatar.png"
+import { Download } from "lucide-react";
 
 const Header: React.FC = () => {
 
     return(
         <header className={`${s.BgIMG}`}>
-            <nav className="flex justify-between items-center font-monsterrat font-medium px-16 py-2">
+            <nav className="flex justify-between items-center font-monsterrat font-medium px-16 py-5">
                 <h3 className="text-white text-2xl font-semibold">Iannis</h3>
                 <ul className="flex justify-center items-center gap-8 cursor-pointer">
                     <li className={`${s.list} text-white`}>Home</li>
                     <li className={`${s.list} text-white`}>About</li>
                     <li className={`${s.list} text-white`}>Contact</li>
                     <li>
-                        <button className={`${s.btn} border border-white p-2 hover:text-blue-800 bg-white tracking-wider  transition-all duration-150 ease-in-out rounded-xl`}>Download my CV</button>
+                        <button className={`${s.btn} flex justify-between gap-1 items-center border border-white p-2 hover:text-blue-800 bg-white tracking-wider  transition-all duration-150 ease-in-out rounded-xl`}>
+                            <Download size={16}/>
+                            Download my CV
+                        </button>
+                        
                     </li>
                 </ul>
             </nav>
@@ -30,11 +35,8 @@ const Header: React.FC = () => {
                         Explore my Work
                     </button>
                 </div>
-                <img src={avatar} alt="avatar image" className="w-[543px]" />
+                <img src={avatar} alt="avatar image" className="w-[519px]" />
             </div>
-
-            
-
         </header>
     )
 }
