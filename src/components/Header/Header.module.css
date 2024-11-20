@@ -1,5 +1,5 @@
 .BgIMG{
-    background-image: url('../../assets/image/fonds-violet.jpg');
+    background-image: url('../../assets/image/bgPurp.jpg');
     background-size: cover;      
     background-position: center;  
     background-repeat: no-repeat;
@@ -14,7 +14,7 @@
     transition: 0.4s all ease;
 }
 .list:hover{
-    color: #cdcdcd;
+    color: #e0e0e0;
     transition: 0.4s all ease;
 }
 .list::after{

@@ -8,6 +8,8 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Aldrich', 'sans-serif'],
+        nunito: ["Nunito", 'sans-serif'],
+        monsterrat: ["Montserrat", 'sans-serif']
       }
     },
   },
