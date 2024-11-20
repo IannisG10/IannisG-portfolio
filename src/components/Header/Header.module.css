@@ -1,36 +1,42 @@
-.headers{
-    height: 84vh;
+.BgIMG{
+    background-image: url('../../assets/image/fonds-violet.jpg');
+    background-size: cover;      
+    background-position: center;  
+    background-repeat: no-repeat;
+    height: 100vh;   
+}
+
+.list{
+    display: inline-block;
     position: relative;
-    background: rgb(50,49,49);
-    background: linear-gradient(243deg, rgba(50,49,49,1) 0%, rgba(142,140,140,1) 53%, rgba(205,199,199,1) 100%);
+    transition: 0.4s all ease;
+    color: #fff;
+    transition: 0.4s all ease;
 }
-.typeText{
-    white-space: nowrap;
-    letter-spacing: .15em;
-    animation: 
-        typing 1s steps(2,end),
-        blink-caret 1s step-end infinite
+.list:hover{
+    color: #cdcdcd;
+    transition: 0.4s all ease;
 }
-.animeName{
-    animation: 
-        blink-caretName 2s step-end infinite,
-        typingName 1.5s steps(8,end)
+.list::after{
+    content: '';
+    width: 100%;
+    position: absolute;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.4s ease-out;
 }
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+.list:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
-@keyframes typingName {
-    from { width: 0 }
-    to { width: 100% }
+.btn{
+    transition: all 0.5s ease ;
 }
 
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange }
-}
-
-@keyframes blink-caretName {
-    from, to { border-color: transparent }
-    50% { border-color: black }
+.btn:hover{
+    transform: scale(1.05);
 }
