@@ -2,6 +2,11 @@ import React from "react";
 import s from "./Header.module.css"
 import avatar from "../../assets/Avatar/Avatar.png"
 import { Download } from "lucide-react";
+import { TbBrandGithubFilled } from "react-icons/tb";
+import { BsLinkedin } from "react-icons/bs";
+import { RiInstagramLine } from "react-icons/ri";
+import { MdOutlineWhatsapp } from "react-icons/md";
+import { IconContext } from "react-icons";
 
 const Header: React.FC = () => {
 
@@ -34,6 +39,14 @@ const Header: React.FC = () => {
                     <button className="font-nunito font-semibold transition-all duration-400 ease-linear hover:scale-105 bg-yellow-400 w-1/3 p-2 rounded-xl">
                         Explore my Work
                     </button>
+                    <div className="text-gray-200 flex items-center gap-2">
+                        <IconContext.Provider value={{className:"text-xl"}}>
+                            <TbBrandGithubFilled className="cursor-pointer hover:text-gray-400"/>
+                            <BsLinkedin className="cursor-pointer hover:text-gray-400"/>
+                            <RiInstagramLine className="cursor-pointer hover:text-gray-400"/>
+                            <MdOutlineWhatsapp className="cursor-pointer hover:text-gray-400"/>
+                        </IconContext.Provider>
+                    </div>
                 </div>
                 <img src={avatar} alt="avatar image" className="w-[519px]" />
             </div>
