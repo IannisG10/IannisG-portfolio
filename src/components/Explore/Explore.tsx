@@ -2,9 +2,13 @@ import React from "react";
 import webIlustration from "../../assets/Avatar/Avatar Explore.png"
 import s from "./Explore.module.css"
 
+
 const Explore: React.FC = () => {
+    
     return(
-        <div className={`${s.exploreBackGround} relative flex justify-evenly items-center p-10 bg-gray-100`}>
+        <div className={`${s.exploreBackGround} relative flex justify-evenly items-center p-10 bg-gray-100`}
+        
+            >
             <div className="flex flex-col justify-start gap-7 absolute z-10 left-28">
                 <h1 className="font-nunito font-semibold text-5xl w-[550px]">Discover my Services and my Expertise</h1>
                 <p className="font-monsterrat text-zinc-300 w-[650px]">

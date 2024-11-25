@@ -10,6 +10,9 @@ export default {
         sans: ['Aldrich', 'sans-serif'],
         nunito: ["Nunito", 'sans-serif'],
         monsterrat: ["Montserrat", 'sans-serif']
+      },
+      backgroundImage: {
+        'bgImage1':"url('../assets/image/BgProject1 (1).jpg')"
       }
     },
   },

@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { skillItem } from "../../data/data";
 import s from "./Skills.module.css"
+import AOS from "aos"
+import 'aos/dist/aos.css'
+
 
 
 const Skills: React.FC = () => {
+
+    useEffect(()=>{
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: false,
+            mirror: true
+        })
+    },[])
     return(
-        <div className="flex justify-center items-center gap-8 my-16">
+        <div className="flex justify-center items-center gap-8 my-16"
+             data-aos="fade-up"
+        >
             {
                 skillItem.map((item,index) =>(
                     <div key={index} 
