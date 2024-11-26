@@ -1,0 +1,42 @@
+.BgIMG{
+    background-image: url('../../assets/image/bgPurp.jpg');
+    background-size: cover;      
+    background-position: center;  
+    background-repeat: no-repeat;
+    height: 100vh;   
+}
+
+.list{
+    display: inline-block;
+    position: relative;
+    transition: 0.4s all ease;
+    color: #fff;
+    transition: 0.4s all ease;
+}
+.list:hover{
+    color: #e0e0e0;
+    transition: 0.4s all ease;
+}
+.list::after{
+    content: '';
+    width: 100%;
+    position: absolute;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.4s ease-out;
+}
+.list:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.btn{
+    transition: all 0.5s ease ;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+}
