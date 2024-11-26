@@ -10,6 +10,8 @@ import python from '../assets/icone/python-removebg-preview.png'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import MyProject from "../components/MyProject/MyProject";
+import Contact from "../components/Contact/Contact";
+import s from '../components/MyProject/Project.module.css'
 
 const Project: React.FC = ()=>{
 
@@ -70,9 +72,11 @@ const Project: React.FC = ()=>{
                 </div>
 
                 {/* Project components  */}
-                <div className="flex justify-start my-5 px-5">
+                <div className={`flex justify-start my-20 px-5 py-5 ${s.projectHeight}`}>
                     <MyProject/>
                 </div>
+
+                <Contact/>
             </div>
         </>
     )

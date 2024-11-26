@@ -17,7 +17,7 @@ export const DataProject: typeProject[] = [
     },
     {
         imageProject: 'Universitech',
-        tittleProject: 'Uniersitech',
+        tittleProject: 'Universitech',
         description: 'Universitech is a cutting-edge web application showcased at Orange’s LiveCoding event, revolutionizing university management. It simplifies scheduling, academic tracking, and student record handling, offering a seamless experience for students, faculty, and administrators.'
     }
 ]
