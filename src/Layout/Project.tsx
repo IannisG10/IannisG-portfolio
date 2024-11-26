@@ -9,6 +9,7 @@ import redux from '../assets/icone/redux-removebg-preview.png'
 import python from '../assets/icone/python-removebg-preview.png'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import MyProject from "../components/MyProject/MyProject";
 
 const Project: React.FC = ()=>{
 
@@ -40,32 +41,37 @@ const Project: React.FC = ()=>{
                         <h1 className="font-nunito text-3xl font-semibold">My Arsenals </h1>
                         <p className="font-monsterrat text-gray-600 text-sm font-medium">My stack crew</p>
                         <div className="grid grid-cols-4 gap-4" data-aos="fade-up">
-                            <div className="bg-zinc-800 flex justify-center items-center rounded-full w-[70px] h-[70px]">
+                            <div className="bg-[#291c3a] flex justify-center items-center rounded-full w-[70px] h-[70px]">
                                 <img src={mongo} alt="MongoDB" className="w-[55px] h-[60px]" />
                             </div>
-                            <div className="bg-zinc-800 flex justify-center items-center rounded-full w-[70px] h-[70px]">
+                            <div className="bg-[#291c3a] flex justify-center items-center rounded-full w-[70px] h-[70px]">
                                 <img src={express} alt="Express" className="w-[57px] h-[60px]" />
                             </div>
-                            <div className="bg-zinc-800 flex justify-center items-center rounded-full w-[70px] h-[70px]">
+                            <div className="bg-[#291c3a] flex justify-center items-center rounded-full w-[70px] h-[70px]">
                                 <img src={react} alt="React" className="w-[58px] h-[54px]"/>
                             </div>
-                            <div className="bg-zinc-800 flex justify-center items-center rounded-full w-[70px] h-[70px]">
+                            <div className="bg-[#291c3a] flex justify-center items-center rounded-full w-[70px] h-[70px]">
                                 <img src={node} alt="node" className="w-[55px] h-[55px]" />
                             </div>
-                            <div className="bg-zinc-800 flex justify-center items-center rounded-full w-[70px] h-[70px]">
+                            <div className="bg-[#291c3a] flex justify-center items-center rounded-full w-[70px] h-[70px]">
                                 <img src={tailwind} alt="Tailwind" className="w-[60px] h-[45px]"/>
                             </div>
-                            <div className="bg-zinc-800 flex justify-center items-center rounded-full w-[70px] h-[70px]">
+                            <div className="bg-[#291c3a] flex justify-center items-center rounded-full w-[70px] h-[70px]">
                                 <img src={redux} alt="Redux" className="w-[50px] h-[48px]"/>
                             </div>
-                            <div className="bg-zinc-800 flex justify-center items-center rounded-full w-[70px] h-[70px]">
+                            <div className="bg-[#291c3a] flex justify-center items-center rounded-full w-[70px] h-[70px]">
                                 <img src={Typescript} alt="TypeScript" className="w-[60px] h-[45px]"/>
                             </div>
-                            <div className="bg-zinc-800 flex justify-center items-center rounded-full w-[70px] h-[70px]">
+                            <div className="bg-[#291c3a] flex justify-center items-center rounded-full w-[70px] h-[70px]">
                                 <img src={python} alt="python" className="w-[60px] h-[55px]"/>
                             </div>
                         </div>
                     </div>
+                </div>
+
+                {/* Project components  */}
+                <div className="flex justify-start my-5 px-5">
+                    <MyProject/>
                 </div>
             </div>
         </>

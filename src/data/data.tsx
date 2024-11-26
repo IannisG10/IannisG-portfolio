@@ -1,35 +1,23 @@
-interface DataType{
-    imgUrl: string;
+interface typeProject {
+    imageProject : string;
+    tittleProject: string;
     description: string;
-    tittle: string;
-    actionButton: string;
-    bgColor: string;
-    textColor: string;
 }
 
-export const skillItem: DataType[] = [
+export const DataProject: typeProject[] = [
     {
-        imgUrl:"MERN",
-        tittle: "MERN Stack",
-        actionButton: "Explore my Code",
-        bgColor: "bg-zinc-950",
-        textColor: "text-white",
-        description:"Proficient in building full-stack web applications with MongoDB, Express.js, React, and Node.js. I focus on crafting efficient APIs, scalable backends, and responsive, dynamic frontends."
+        imageProject: 'Taskly',
+        tittleProject: 'Taskly',
+        description: 'Taskly is a sleek and intuitive task management app designed to boost your productivity.Easily organize your to-dos, track completed tasks, and manage priorities with a user-friendly interface.'
     },
     {
-        imgUrl: "Python",
-        tittle: "Python 3",
-        actionButton: "See Python script",
-        bgColor: "bg-amber-500",
-        textColor: "text-black",
-        description: "Efficient, Versatile, Scalable Experienced in writing clean and modular Python code for automation, data analysis, and exploring the fundamentals of machine learning and AI development."
+        imageProject: 'Concept',
+        tittleProject: 'Concept Junior',
+        description: 'Taskly is a sleek and intuitive task management app designed to boost your productivity. Easily organize your to-dos, track completed tasks, and manage priorities with a user-friendly interface.'
     },
     {
-        imgUrl: "Figma",
-        tittle: "Figma",
-        actionButton: "Let's Collaborate",
-        bgColor: "bg-blue-600",
-        textColor: "text-black",
-        description: "Skilled in designing intuitive user interfaces and prototypes using Figma, ensuring a seamless user experience with a strong focus on functionality and aesthetics."
+        imageProject: 'Universitech',
+        tittleProject: 'Uniersitech',
+        description: 'Universitech is a cutting-edge web application showcased at Orange’s LiveCoding event, revolutionizing university management. It simplifies scheduling, academic tracking, and student record handling, offering a seamless experience for students, faculty, and administrators.'
     }
-] 
+]
