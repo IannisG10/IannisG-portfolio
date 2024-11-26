@@ -5,7 +5,7 @@ import { Send } from "lucide-react";
 
 const Contact: React.FC = ()=>{
     return(
-        <div className="bg-purple-300 mx-3 pl-8 py-4 flex justify-between items-center">
+        <div className="bg-purple-300 mx-3 mb-5 pl-8 py-4 flex justify-between items-center">
            <div className="flex flex-col gap-20">
                 <h1 className="font-nunito text-4xl">Got ideas? <br />Let's make it real in <span className="text-purple-800 font-bold">cool</span> something</h1>
                 <div className="flex flex-col gap-5">

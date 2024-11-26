@@ -11,6 +11,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import MyProject from "../components/MyProject/MyProject";
 import Contact from "../components/Contact/Contact";
+import Footer from "@/components/Footer/Footer";
 import s from '../components/MyProject/Project.module.css'
 
 const Project: React.FC = ()=>{
@@ -77,6 +78,7 @@ const Project: React.FC = ()=>{
                 </div>
 
                 <Contact/>
+                <Footer/>
             </div>
         </>
     )
