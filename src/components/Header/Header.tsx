@@ -8,6 +8,7 @@ import { RiInstagramLine } from "react-icons/ri";
 import { MdOutlineWhatsapp } from "react-icons/md";
 import { IconContext } from "react-icons";
 import ResponsiveMenu from "../ResponsiveMenu/ResponsiveMenu";
+import SideBar from "../ResponsiveMenu/SideBar";
 
 const Header: React.FC = () => {
 
@@ -18,10 +19,11 @@ const Header: React.FC = () => {
     }
 
     return(
-        <header className={`${s.BgIMG}`}>
+        <header className={`${s.BgIMG} relative`}>
             <nav className="flex justify-between items-center font-monsterrat p-2 font-medium px-2 md:px-16  md:py-5">
                 <h3 className="text-white text-2xl font-semibold">Iannis</h3>
                 <ResponsiveMenu openMenu={openMenu} handleOpenMenu={handleOpenMenu}/>
+                <SideBar openMenu={openMenu}/>
                 <ul className="md:flex hidden  justify-center items-center gap-3 text-sm md:gap-8 md:text-base cursor-pointer">
                     <li className={`${s.list} text-white`}>Home</li>
                     <li className={`${s.list} text-white`}>About</li>
