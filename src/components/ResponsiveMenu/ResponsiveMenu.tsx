@@ -10,7 +10,7 @@ interface menuProps{
 const ResponsiveMenu: React.FC<menuProps> = ({openMenu,handleOpenMenu})=>{
     return(
         <>
-            <div className="block cursor-pointer md:hidden bg-purple-200 rounded-md p-1"
+            <div className="block cursor-pointer md:hidden border border-purple-100 bg-purple-200 right-3 fixed rounded-md p-1"
                  onClick={()=>{handleOpenMenu()}}
             >
                 {openMenu ? <X size={22}/> : <Menu size={22}/>}
