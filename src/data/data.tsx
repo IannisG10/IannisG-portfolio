@@ -8,7 +8,7 @@ export const DataProject: typeProject[] = [
     {
         imageProject: 'Taskly',
         tittleProject: 'Taskly',
-        description: 'Taskly is a sleek and intuitive task management app designed to boost your productivity.Easily organize your to-dos, track completed tasks, and manage priorities with a user-friendly interface.'
+        description: 'Taskly is a sleek and intuitive task management app <span>designed to boost your productivity.Easily organize your to-dos, track completed tasks, and manage priorities with a user-friendly interface.'
     },
     {
         imageProject: 'Concept',
