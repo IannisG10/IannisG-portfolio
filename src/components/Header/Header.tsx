@@ -20,7 +20,7 @@ const Header: React.FC = () => {
 
     return(
         <header className={`${s.BgIMG} relative`}>
-            <nav className="flex justify-between items-center font-monsterrat p-2 font-medium px-2 md:px-16  md:py-5">
+            <nav className="flex justify-between items-center font-monsterrat p-2 font-medium px-5 md:px-16  md:py-5">
                 <h3 className="text-white text-2xl font-semibold">Iannis</h3>
                 <ResponsiveMenu openMenu={openMenu} handleOpenMenu={handleOpenMenu}/>
                 <SideBar openMenu={openMenu}/>
