@@ -20,7 +20,7 @@ const Header: React.FC = () => {
 
     return(
         <header className={`${s.BgIMG} relative`}>
-            <nav className="flex justify-between items-center font-monsterrat p-2 font-medium px-5 md:px-16  md:py-5">
+            <nav className="flex justify-between items-center font-monsterrat p-2 font-medium px-5 md:px-8  md:py-3">
                 <h3 className="text-white text-2xl font-semibold">Iannis</h3>
                 <ResponsiveMenu openMenu={openMenu} handleOpenMenu={handleOpenMenu}/>
                 <SideBar openMenu={openMenu}/>
@@ -29,17 +29,17 @@ const Header: React.FC = () => {
                     <li className={`${s.list} text-white`}>About</li>
                     <li className={`${s.list} text-white`}>Contact</li>
                     <li>
-                        <button className={`${s.btn} flex justify-between md:gap-1 md:text-base text-xs items-center border border-white p-2 hover:text-blue-800 bg-white tracking-wider md:block md:w-1/2 transition-all duration-150 ease-in-out rounded-xl`}>
+                        <button className={`${s.btn} flex justify-center md:gap-1 md:text-base text-xs items-center border border-white p-2 hover:text-blue-800 bg-white tracking-wider md:w-[200px] transition-all duration-150 ease-in-out rounded-xl`}>
                             <Download size={16}/>
-                            Download my CV
+                            <p>Download my CV</p>
                         </button>
                         
                     </li>
                 </ul>
             </nav>
 
-            <div className="flex md:flex-row flex-col justify-center items-center py-10">
-                <div className="flex flex-col md:justify-start justify-center items-center gap-4">
+            <div className="flex md:flex-row flex-col  justify-center items-center py-10">
+                <div className="flex flex-col md:justify-start md:items-start justify-center items-center gap-4">
                     <h1 className="font-nunito text-5xl text-white md:w-[400px] w-[300px]">Welcome To My Universe</h1>
                     <p className="font-monsterrat text-zinc-300 font-medium md:w-[550px] w-[320px]">
                         I'm Iannis a passionate web developper dedicated to creating innovative and user-friendly websites.
