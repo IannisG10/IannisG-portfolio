@@ -12,14 +12,14 @@ const Header: React.FC = () => {
 
     return(
         <header className={`${s.BgIMG}`}>
-            <nav className="flex justify-between items-center font-monsterrat font-medium px-16 py-5">
+            <nav className="flex justify-between items-center font-monsterrat font-medium px-2 md:px-16  md:py-5">
                 <h3 className="text-white text-2xl font-semibold">Iannis</h3>
-                <ul className="flex justify-center items-center gap-8 cursor-pointer">
+                <ul className="flex justify-center items-center gap-3 text-sm md:gap-8 md:text-base cursor-pointer">
                     <li className={`${s.list} text-white`}>Home</li>
                     <li className={`${s.list} text-white`}>About</li>
                     <li className={`${s.list} text-white`}>Contact</li>
                     <li>
-                        <button className={`${s.btn} flex justify-between gap-1 items-center border border-white p-2 hover:text-blue-800 bg-white tracking-wider  transition-all duration-150 ease-in-out rounded-xl`}>
+                        <button className={`${s.btn} flex justify-between md:gap-1 md:text-base text-xs items-center border border-white p-2 hover:text-blue-800 bg-white tracking-wider md:block md:w-1/2 transition-all duration-150 ease-in-out rounded-xl`}>
                             <Download size={16}/>
                             Download my CV
                         </button>
