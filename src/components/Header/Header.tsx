@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import s from "./Header.module.css"
 import avatar from "../../assets/Avatar/Avatar.png"
 import { Download } from "lucide-react";
@@ -7,14 +7,22 @@ import { BsLinkedin } from "react-icons/bs";
 import { RiInstagramLine } from "react-icons/ri";
 import { MdOutlineWhatsapp } from "react-icons/md";
 import { IconContext } from "react-icons";
+import ResponsiveMenu from "../ResponsiveMenu/ResponsiveMenu";
 
 const Header: React.FC = () => {
 
+    const [openMenu,setOpenMenu] = useState<boolean>(false)
+
+    const handleOpenMenu = ()=>{
+        setOpenMenu(!openMenu)
+    }
+
     return(
         <header className={`${s.BgIMG}`}>
-            <nav className="flex justify-between items-center font-monsterrat font-medium px-2 md:px-16  md:py-5">
+            <nav className="flex justify-between items-center font-monsterrat p-2 font-medium px-2 md:px-16  md:py-5">
                 <h3 className="text-white text-2xl font-semibold">Iannis</h3>
-                <ul className="flex justify-center items-center gap-3 text-sm md:gap-8 md:text-base cursor-pointer">
+                <ResponsiveMenu openMenu={openMenu} handleOpenMenu={handleOpenMenu}/>
+                <ul className="md:flex hidden  justify-center items-center gap-3 text-sm md:gap-8 md:text-base cursor-pointer">
                     <li className={`${s.list} text-white`}>Home</li>
                     <li className={`${s.list} text-white`}>About</li>
                     <li className={`${s.list} text-white`}>Contact</li>
