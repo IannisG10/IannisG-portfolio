@@ -6,6 +6,11 @@
     height: 100vh;   
     
 }
+@media (max-width: 768px) {
+    .BgIMG{
+      width: 100%;
+    }
+  }
 
 
 

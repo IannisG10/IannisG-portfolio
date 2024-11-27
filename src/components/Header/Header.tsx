@@ -38,19 +38,19 @@ const Header: React.FC = () => {
                 </ul>
             </nav>
 
-            <div className="flex justify-center items-center py-10">
-                <div className="flex flex-col justify-start gap-7">
-                    <h1 className="font-nunito text-5xl text-white w-[400px]">Welcome To My Universe</h1>
-                    <p className="font-monsterrat text-zinc-300 font-medium w-[550px]">
+            <div className="flex md:flex-row flex-col justify-center items-center py-10">
+                <div className="flex flex-col md:justify-start justify-center items-center gap-4">
+                    <h1 className="font-nunito text-5xl text-white md:w-[400px] w-[300px]">Welcome To My Universe</h1>
+                    <p className="font-monsterrat text-zinc-300 font-medium md:w-[550px] w-[320px]">
                         I'm Iannis a passionate web developper dedicated to creating innovative and user-friendly websites.
                         With a strong background in programming
 
                     </p>
-                    <button className="font-nunito font-semibold transition-all duration-400 ease-linear hover:scale-105 bg-yellow-400 w-1/3 p-2 rounded-xl">
+                    <button className="font-nunito font-semibold transition-all duration-400 ease-linear hover:scale-105 bg-yellow-400 md:w-1/3 w-1/2 p-2 rounded-xl">
                         Explore my Work
                     </button>
                     <div className="text-gray-200 flex items-center gap-2">
-                        <IconContext.Provider value={{className:"text-xl"}}>
+                        <IconContext.Provider value={{className:"md:text-xl text-base"}}>
                             <TbBrandGithubFilled className="cursor-pointer hover:text-gray-400"/>
                             <BsLinkedin className="cursor-pointer hover:text-gray-400"/>
                             <RiInstagramLine className="cursor-pointer hover:text-gray-400"/>
@@ -58,7 +58,7 @@ const Header: React.FC = () => {
                         </IconContext.Provider>
                     </div>
                 </div>
-                <img src={avatar} alt="avatar image" className="w-[519px]" />
+                <img src={avatar} alt="avatar image" className="w-[119px] md:mt-0 mt-10" />
             </div>
         </header>
     )
