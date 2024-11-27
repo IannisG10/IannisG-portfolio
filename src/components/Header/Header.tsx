@@ -50,7 +50,7 @@ const Header: React.FC = () => {
                         Explore my Work
                     </button>
                     <div className="text-gray-200 flex items-center gap-2">
-                        <IconContext.Provider value={{className:"md:text-xl text-base"}}>
+                        <IconContext.Provider value={{className:"text-xl"}}>
                             <TbBrandGithubFilled className="cursor-pointer hover:text-gray-400"/>
                             <BsLinkedin className="cursor-pointer hover:text-gray-400"/>
                             <RiInstagramLine className="cursor-pointer hover:text-gray-400"/>
@@ -58,7 +58,7 @@ const Header: React.FC = () => {
                         </IconContext.Provider>
                     </div>
                 </div>
-                <img src={avatar} alt="avatar image" className="w-[119px] md:mt-0 mt-10" />
+                <img src={avatar} alt="avatar image" className="md:w-[519px] w-[319px] md:mt-0 mt-10" />
             </div>
         </header>
     )

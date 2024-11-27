@@ -26,14 +26,14 @@ const Project: React.FC = ()=>{
     return(
         <>
             <div className="bg-purple-200">
-                <div className="flex justify-start">
-                    <div className="flex flex-col justify-start w-1/2 left-5 px-20 py-5 gap-4">
+                <div className="flex md:justify-start justify-center">
+                    <div className="flex flex-col md:justify-start justify-center items-center w-full left-5 px-20 py-5 gap-4">
                         <h1 className="font-nunito text-3xl font-semibold">Building idea into <span className="text-green-500">R</span>e<span className="text-blue-400">a</span><span className="text-green-700">l</span>ity</h1>
-                        <p className="font-monsterrat text-gray-600 text-sm font-medium">
+                        <p className="font-monsterrat md:w-[200px] w-[300px] text-gray-600 text-sm font-medium">
                         I am a dedicated web developer with expertise in React, Node.js, and MongoDB. Passionate about creating efficient, user-focused applications, 
                         I thrive in building innovative solutions and working on collaborative projects.
                         </p>
-                        <button className="border-none bg-yellow-400 hover:scale-105 transition-all duration-300 ease-in-out font-nunito rounded-lg w-1/2 font-medium py-1 px-2">
+                        <button className="border-none bg-yellow-400 hover:scale-105 transition-all duration-300 ease-in-out font-nunito rounded-lg md:w-1/2 w-[170px] font-medium md:py-1 py-2 px-2">
                             Explore my Services
                         </button>
                     </div>
