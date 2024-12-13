@@ -8,7 +8,7 @@ export const DataProject: typeProject[] = [
     {
         imageProject: 'Taskly',
         tittleProject: 'Taskly',
-        description: 'Taskly is a sleek and intuitive task management app <span>designed to boost your productivity.Easily organize your to-dos, track completed tasks, and manage priorities with a user-friendly interface.'
+        description: 'Taskly is a sleek and intuitive task management app designed to boost your productivity.Easily organize your to-dos, track completed tasks, and manage priorities with a user-friendly interface.'
     },
     {
         imageProject: 'Concept',
@@ -18,6 +18,6 @@ export const DataProject: typeProject[] = [
     {
         imageProject: 'Universitech',
         tittleProject: 'Universitech',
-        description: 'Universitech is a cutting-edge web application showcased at Orange’s LiveCoding event, revolutionizing university management. It simplifies scheduling, academic tracking, and student record handling, offering a seamless experience for students, faculty, and administrators.'
+        description: 'Universitech is a web application showcased at Orange’s LiveCoding event, revolutionizing university management. It simplifies scheduling, and student record handling, offering a seamless experience for students.'
     }
 ]

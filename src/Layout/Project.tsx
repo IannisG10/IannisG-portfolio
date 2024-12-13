@@ -73,7 +73,7 @@ const Project: React.FC = ()=>{
                 </div>
 
                 {/* Project components  */}
-                <div className={`flex justify-start my-20 px-5 py-5 ${s.projectHeight}`}>
+                <div className={`flex justify-center items-center my-20 px-5 py-5 ${s.projectHeight}`}>
                     <MyProject/>
                 </div>
 

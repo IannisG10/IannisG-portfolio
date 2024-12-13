@@ -51,10 +51,10 @@ const Header: React.FC = () => {
                     </button>
                     <div className="text-gray-200 flex items-center gap-2">
                         <IconContext.Provider value={{className:"text-xl"}}>
-                            <TbBrandGithubFilled className="cursor-pointer hover:text-gray-400"/>
+                            <a href="https://github.com/IannisG10" target="_blank"><TbBrandGithubFilled className="cursor-pointer hover:text-gray-400"/></a>
                             <BsLinkedin className="cursor-pointer hover:text-gray-400"/>
-                            <RiInstagramLine className="cursor-pointer hover:text-gray-400"/>
-                            <MdOutlineWhatsapp className="cursor-pointer hover:text-gray-400"/>
+                            <a href="https://www.instagram.com/http.iannisbry1_x/" target="_blank"><RiInstagramLine className="cursor-pointer hover:text-gray-400"/></a>   
+                            <a href="https://wa.me/261328580321" target="_blank"><MdOutlineWhatsapp className="cursor-pointer hover:text-gray-400"/></a> 
                         </IconContext.Provider>
                     </div>
                 </div>
