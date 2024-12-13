@@ -10,9 +10,9 @@ const Footer: React.FC = ()=>{
             <p className="font-monsterrat text-sm text-white">Designed and built by <span className="text-purple-500">Iannis</span></p>
             <p className="font-monsterrat text-sm text-white">&copy; 2024 <span className="text-purple-500 font-semibold">Iannis.</span> All rights reserved.</p>
             <div className="flex justify-center items-center text-white text-2xl gap-2">
-                <RiInstagramFill className="cursor-pointer"/>
-                <RiLinkedinBoxFill className="cursor-pointer"/>
-                <RiGithubFill className="cursor-pointer"/>
+                <a href="https://www.instagram.com/http.iannisbry1_x/" target="_blank"><RiInstagramFill className="cursor-pointer"/></a>
+                <a href=""><RiLinkedinBoxFill className="cursor-pointer"/></a>
+                <a href="https://github.com/IannisG10" target="_blank"> <RiGithubFill className="cursor-pointer"/></a>
             </div>
         </div>
     )
